@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, Menu, Row } from 'antd';
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
+import { AppstoreOutlined, HomeOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import { useNavigate } from "react-router-dom";
 
 function SideMenu() {
@@ -15,7 +15,7 @@ function SideMenu() {
         };
     }
     const items = [
-        getItem('Home', '/', <MailOutlined />),
+        getItem('Home', '/', <HomeOutlined />),
         getItem('Store', '/Store', <AppstoreOutlined />, [
             getItem('Store1', '/Store1'),
             getItem('Store2', '/Store2'),
@@ -26,12 +26,14 @@ function SideMenu() {
             getItem('Setting2', '/Setting2'),
             getItem('Setting3', '/Setting3'),
             getItem('Setting4', '/Setting4'),
+            getItem('Setting5', '/Setting5'),
+
 
         ]),
     ];
     return (
         <Row style = {{ backgroundColor: "#001529"}}>
-            <Image src={process.env.PUBLIC_URL+'snapedit_1705996962396.png'}></Image>
+            <Image src={process.env.PUBLIC_URL+'snapedit_1705996962396.jpg'}></Image>
             <Menu
                 theme='dark'
                 onClick={({ key }) => {
