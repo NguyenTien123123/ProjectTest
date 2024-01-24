@@ -31,7 +31,7 @@ function SideMenu() {
     ];
     return (
         <Row style = {{ backgroundColor: "#001529"}}>
-            <Image src={process.env.PUBLIC_URL+'logoApp.jpg'}></Image>
+            <Image src={process.env.PUBLIC_URL+'snapedit_1705996962396.png'}></Image>
             <Menu
                 theme='dark'
                 onClick={({ key }) => {
